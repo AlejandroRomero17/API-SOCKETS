@@ -2,7 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import { config } from "dotenv";
 config()
-import listasRouter from './src/routes/list.routes.js'
+import listasRouter from './routes/list.routes.js'
 const app = express();
 
 // Middlewares
