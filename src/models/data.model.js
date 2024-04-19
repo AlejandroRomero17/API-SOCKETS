@@ -1,9 +1,9 @@
 import { Schema, model } from "mongoose";
 
 // Definición del esquema de la lista
-const listaSchema = new Schema(
+const dataSchema = new Schema(
   {
-    code: {
+    id: {
       type: String,
       unique: true,
       required: true,
@@ -31,4 +31,4 @@ const listaSchema = new Schema(
 );
 
 // Crear y exportar el modelo List basado en el esquema listaSchema
-export default model("List", listaSchema);
+export default model("data", dataSchema);

@@ -3,8 +3,8 @@ import database from "./database.js";
 import dotenv from 'dotenv';
 dotenv.config();
 
-const port= process.env.PORT;
+const PORT= process.env.PORT;
 
-app.listen(port,()=>{
-console.log("Run Server on port: "+port);
+app.listen(PORT,()=>{
+console.log("Run Server on port: "+ PORT);
 });
