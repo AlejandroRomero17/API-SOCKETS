@@ -6,9 +6,9 @@ const DataDAO = {};
 // Método asíncrono para obtener todos los datos
 DataDAO.getAll = async () => {
     // Buscar todos los datos en la base de datos
-    const datas = await Data.find();
+    const data_app = await Data.find();
     // Devolver los datos encontrados
-    return datas;
+    return data_app;
 };
 
 // Método asíncrono para obtener datos por su id

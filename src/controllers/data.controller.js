@@ -4,9 +4,9 @@ import DataDAO from '../dao/data.dao.js';
 export const getAll = async (req, res) => {
     try {
         // Llamada a DataDAO para obtener todos los datos
-        const datas = await DataDAO.getAll();
+        const data_app = await DataDAO.getAll();
         // Devolver los datos en formato JSON
-        res.json(datas);
+        res.json(data_app);
     } catch (error) {
         // Manejar errores y devolver un mensaje de error al cliente
         res.status(500).json({ status: "Server unavailable", message: error.message });

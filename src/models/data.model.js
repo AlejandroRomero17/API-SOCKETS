@@ -22,13 +22,18 @@ const dataSchema = new Schema(
     objectDistance: {
       type: Number,
     },
+    led: {
+      type: Boolean,
+      default: false,
+    },
   },
   // Opciones del esquema
   {
     versionKey: false, // Desactivar el campo __v
     timestamps: true, // Agregar campos de createdAt y updatedAt automáticamente
+    collection: 'data_app'
   }
 );
 
 // Crear y exportar el modelo List basado en el esquema listaSchema
-export default model("data", dataSchema);
+export default model("Data", dataSchema);
